@@ -37,7 +37,7 @@
            top: 35%;
            left: 50%;
            transform: translate(-50%, -50%);
-           font-size: 7em;
+           font-size: 5em;
            color: white;
            z-index: 9999;
        }
@@ -48,7 +48,7 @@
        function playSoundAndChangeImage() {
            clickCount++;
 
-           if (clickCount % 30 === 0) {
+           if (clickCount % 100 === 0) {
                var audio = new Audio('sound2.mp3');
            } else {
                var audio = new Audio('sound1.mp3');
