@@ -48,7 +48,9 @@
        function playSoundAndChangeImage() {
            clickCount++;
 
-           if (clickCount % 100 === 0) {
+           if (clickCount % 120 === 0) {
+               var audio = new Audio('sound3.mp3');
+           } else if (clickCount % 100 === 0) {
                var audio = new Audio('sound2.mp3');
            } else {
                var audio = new Audio('sound1.mp3');
